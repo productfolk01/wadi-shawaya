@@ -271,6 +271,27 @@ font-family: "Inter", sans-serif;
 .rate{
   color: #e21224;
 }
+ /* Navbar links */
+    .navbar-nav .nav-link {
+      color: #4b2e05 !important;
+      font-weight: 600;
+      font-size: 1rem;
+      text-transform: uppercase;
+      margin-right: 20px;
+      transition: color 0.3s, transform 0.2s;
+    }
+
+    /* Hover effect */
+    .navbar-nav .nav-link:hover {
+      color: #e21224 !important;
+      transform: scale(1.05);
+    }
+
+    /* Active link style */
+    .navbar-nav .nav-link.active {
+      color: #e21224 !important;
+      border-bottom: 2px solid #e21224;
+    }
 
 
 
@@ -280,6 +301,32 @@ font-family: "Inter", sans-serif;
     </style>
 </head>
 <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:  hsl(41, 34%, 82%);">
+  <div class="container-fluid">
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
     <div class="bg">
         <div class="img1">
             <img src="assets/wadi-logo-eoBAxxjz.png">
@@ -332,6 +379,9 @@ font-family: "Inter", sans-serif;
     </div>
   </div>
 </div>
+</div>
+
+
 <div class="menu">
   <div class="container py-5">
     <h2 class="text-center mb-3 fw-bold">Our Menu</h2>
@@ -410,7 +460,6 @@ font-family: "Inter", sans-serif;
   <h2 style="color: #e21224; font-size: 24px;">Sides & Salads</h2>
   <br>
   <div class="card-group">
- 
     <div class="card" style="width: 22rem;">
       <img src="assets/hsimg-2623047.webp" class="card-img-top" alt="...">
       <div class="card-body">
@@ -476,7 +525,7 @@ font-family: "Inter", sans-serif;
             <img src="assets/location.png" alt="Location" style="width:50px; height:50px;">
             <div>
               <h5>Location</h5>
-              <p>Khaled Ibn Al Walid St, Al Rakah Al Janubiyah, Al Khobar 34226, Saudi Arabia</p>
+              <p> Al Rakah, Al Janubiyah, Al Khobar 34226, Saudi Arabia</p>
             </div>
           </div>
         </div>
@@ -508,14 +557,11 @@ font-family: "Inter", sans-serif;
 
         <p style="font-size: 18px;line-height: 20px; font-weight: 400px;color: #7e6f67; text-align: center;">Ready to order?</p>
 
-
-        
-  <a href="https://wa.me/YOURNUMBER" target="_blank" class="bt">
-    <i class="fab fa-whatsapp"></i> 
-    Order Now on WhatsApp
-  </a>
+      </div>
+     
+      
 </div>
-
+  </div>
 
 
     

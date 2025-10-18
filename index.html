@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=BBH+Sans+Bogle&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Bree+Serif&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Bree+Serif&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -16,24 +20,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         .bg {
-            background-color: #e0d8c7;
+           background-color: hsl(41, 34%, 82%);
          padding: 50px;
     height: 600px;
-    width: 100%; /* better than fixed 1890px */
-    display: flex;             /* enable flexbox */
-    justify-content: center;   /* center horizontally */
-    align-items: center;       /* center vertically */
+    width: 100%;
+    display: flex;             
+    justify-content: center;   
+    align-items: center;       
     text-align: center;
     height: 700px;
         }
         .img1 img {
     max-width: 256px;
     height: 170px;
-    margin-bottom: 30px; /* space below image */
+    margin-bottom: 30px;
 }
-.first{
-    padding: ;
-}
+
 .box{
     width: 896px;
     height: 528px;
@@ -49,12 +51,12 @@
 }
 .bt{
     font-family: Arial, sans-serif;
-    background-color: #25D366; /* WhatsApp green */
+    background-color: #25D366; 
     font-size: 20px;
     align-items: center;
     padding: 12px 20px;
      
-      background-color: #25D366; /* WhatsApp green */
+      background-color: #25D366; 
       color: white;
       
       
@@ -67,14 +69,15 @@
      
       transition: transform 0.2s;
        font-size: 20px;
+       border-radius: 10px;
      
 
 }
  .whatsapp-btn {
       position: fixed;
-      bottom: 20px;   /* distance from bottom */
-      right: 20px;    /* distance from right */
-      background-color: #25D366; /* WhatsApp green */
+      bottom: 20px; 
+      right: 20px;    
+      background-color: #25D366; 
       color: white;
       padding: 12px 20px;
       border-radius: 50px;
@@ -86,21 +89,22 @@
       text-decoration: none;
       box-shadow: 0 4px 8px rgba(0,0,0,0.3);
       transition: transform 0.2s;
-      z-index: 1000;  /* stay on top */
+      z-index: 1000;
     }
 
-    .whatsapp-btn:hover {
-      transform: scale(1.1);
-    }
+   .bt:hover, .whatsapp-btn:hover {
+    background-color: #1ebe55;
+    color: white; 
+}
 
     .whatsapp-btn i {
       font-size: 20px;
     }
 
 .img1 h2 {
-    margin-bottom: 20px; /* space below heading */
- font-family: "Inter", sans-serif;
-  font-weight: 400;
+    margin-bottom: 20px; 
+font-family: "Inter", sans-serif;
+  font-weight: 00;
   font-style: normal;
   font-size: 60px;
   line-height: 60px;
@@ -116,7 +120,7 @@
     font-family: "Inter", sans-serif;
 }
 .img1 p {
-    margin-bottom: 25px; /* space below paragraph */
+    margin-bottom: 25px; 
     font-size: 24px;
     line-height: 32px;
     font-weight: 400px;
@@ -124,32 +128,28 @@
     font-family: "Inter", sans-serif;
 }
 
-.img1 button {
-    /* optional spacing if needed */
-}
+
 .div2{
     width: 100%;
     height: 2000px;
 }
 .menu{
-     background-color: #e0d8c7
+     background-color: #F9F8F6;
 
 }
  .parent {
       width: 100%;
       height: 500px;
       display: flex;
-      justify-content: center; /* center horizontally */
-      align-items: center;     /* center vertically */
+      justify-content: center; 
+      align-items: center;     
       margin-bottom: 50px;
     }
-
-    /* Child div */
     .child {
       width: 800px;
       height: 600px;
-      background-color: rgb(249, 242, 243);
-      border-radius: 10px;     /* optional, for rounded corners */
+      background-color: #F9F8F6;
+      border-radius: 10px;     
       
       padding: 20px;
       margin-top: 200px;
@@ -160,6 +160,121 @@
         height: 800px;
 
     }
+    .card-text{
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 700px;
+        color:#2c2421;
+
+    }
+    .para1{
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400px;
+        color: #7e6f67;
+
+    }
+    .text-muted{
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 700px;
+        color: #792027;
+    }
+      .footer {
+  background-color:#F9F8F6;
+  color: #7e6f67;
+  text-align: center;
+  padding: 15px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  margin-top: 80px; 
+}
+.card-img-top {
+  width: 100%;
+  height: 220px; 
+  object-fit: cover; 
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.card {
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.card:hover .card-img-top {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sides-section .card {
+  height: 420px; 
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.sides-section .card-img-top {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+
+.sides-section .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+
+.sides-section .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.sides-section .card-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: start;
+}
+
+.sides-section .card {
+  flex: 1 1 300px;
+  max-width: 22rem;
+}
+.bt i {
+  margin-right: 8px;   
+}
+
+.bt i + i {
+  margin-left: 4px;   
+}
+.rate{
+  color: #e21224;
+}
+
+
+
+
 
       
     </style>
@@ -179,57 +294,48 @@
         </div>
     </div>
 
-<div  class="div2">
+<h2 class="text-center my-4">Customer Favorites</h2>
 
-
-
-
-<h2 class="text-center my-4">
-    Customer Favorites
-</h2>
-
-<div class="first d-flex justify-content-center gap-3" style="width: 1400px; height:448 ;">
-  <div class="card" style="width: 18rem;">
-    <img src="assets/cfav.webp" class="card-img-top" alt="...">
-    <div class="card-body">
-      <p class="card-text">Shawaya With Rice - Half Chicken</p>
-      <p>Slow cooked - deeply flavored - always satisfying shawaya</p>
-      <p>25.0 SR</p>
+<div class="container my-5">
+  <div class="row g-4 justify-content-center">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 text-center">
+        <img src="assets/cfav.webp" class="card-img-top" alt="Shawaya With Rice">
+        <div class="card-body">
+          <p class="card-text fw-bold">Shawaya With Rice - Half Chicken</p>
+          <p class="para1">Slow cooked - deeply flavored - always satisfying shawaya</p>
+          <div class="rate">
+          <p class="text-muted" >25.0 SR</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-
-  <div class="card" style="width: 18rem;">
-    <img src="assets/cfav3.webp" class="card-img-top" alt="...">
-    <div class="card-body">
-      <p class="card-text">Al Fahm Chicken With Rice - Half Chicken</p>
-      <p>Chicken prepared on the grill</p>
-      <p>25.0 SR</p>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 text-center">
+        <img src="assets/cfav3.webp" class="card-img-top" alt="Al Fahm Chicken">
+        <div class="card-body">
+          <p class="card-text fw-bold">Al Fahm Chicken With Rice - Half Chicken</p>
+          <p class="para1">Chicken prepared on the grill</p>
+          <p class="text-muted">25.0 SR</p>
+        </div>
+      </div>
     </div>
-  </div>
-
-  <div class="card" style="width: 18rem;">
-    <img src="assets/cfav2.webp" class="card-img-top" style="width: 100%;" alt="...">
-    <div class="card-body">
-      <p class="card-text">Shawaya With Rice - Half Chicken</p>
-      <p>Slow cooked - deeply flavored - always satisfying shawaya</p>
-      <p>25.0 SR</p>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 text-center">
+        <img src="assets/cfav2.webp" class="card-img-top" alt="Shawaya With Rice">
+        <div class="card-body">
+          <p class="card-text fw-bold">Shawaya With Rice - Half Chicken</p>
+          <p class="para1">Slow cooked - deeply flavored - always satisfying shawaya</p>
+          <p class="text-muted">25.0 SR</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
-
-
-
-
 <div class="menu">
-
-
-
   <div class="container py-5">
     <h2 class="text-center mb-3 fw-bold">Our Menu</h2>
-    <p class="text-center mb-5">Discover our selection of authentic shawarma and grilled chicken dishes</p>
-
-    <!-- Row 1 -->
+    <p class="text-center mb-5" style="font-size: 18px;line-height: 28px; font-weight: 400px; color: #7e6f67;" >Discover our selection of authentic shawarma and grilled chicken dishes</p>
     <div class="row justify-content-center mb-4">
       <div class="col-md-4 mb-3 d-flex">
         <div class="card w-100">
@@ -264,8 +370,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Row 2 -->
     <div class="row justify-content-center">
       <div class="col-md-4 mb-3 d-flex">
         <div class="card w-100">
@@ -302,16 +406,20 @@
     </div>
   </div>
   <br>
-<div style="margin-left: 100px;">
+<div class="sides-section" style="margin-left: 100px;">
   <h2 style="color: #e21224; font-size: 24px;">Sides & Salads</h2>
   <br>
-  <div class="d-flex" style="gap: 10px;"> 
+  <div class="card-group">
+ 
     <div class="card" style="width: 22rem;">
       <img src="assets/hsimg-2623047.webp" class="card-img-top" alt="...">
       <div class="card-body">
         <p class="card-text">Cucumber With Yogurt</p>
         <p class="card-text">Edam made from fresh vegetables</p>
-        <p class="card-text">8.0 SR</p>
+        <p class="card-text" style="color: #e21224; font-size: 30px;
+        line-height: 20px;
+        font-weight: 700px;
+        ">8.0 SR</p>
       </div>
     </div>
 
@@ -320,37 +428,41 @@
       <div class="card-body">
         <p class="card-text">Mix Vegetables Edam</p>
         <p class="card-text">Prepared with yogurt, cucumber, garlic, salt, lemon juice and dried mint</p>
-        <p class="card-text">8.0 SR</p>
+        <p class="card-text" style="color: #e21224; font-size: 30px;
+        line-height: 20px;
+        font-weight: 700px;
+        ">8.0 SR</p>
       </div>
     </div>
   </div>
   <br><br>
 
-  <h2>Beverages</h2>
-  <br>
+  <h2 style="color: #e21224;">Beverages</h2>
+<br>
 
-  <div class="d-flex" style="gap: 10px;"> 
-    <div class="card" style="width: 22rem;">
-      <img src="assets/bev1.webp" class="card-img-top" alt="...">
+<div class="row g-3"> <!-- Bootstrap row with gap -->
+  <div class="col-12 col-md-6"> <!-- full width on mobile, half on md+ -->
+    <div class="card h-100">
+      <img src="assets/bev1.webp" class="card-img-top" alt="Laban">
       <div class="card-body">
         <p class="card-text">Laban</p>
         <p class="card-text">Almarai fresh laban</p>
-        <p class="card-text">3.0 SR</p>
+        <p class="card-text" style="color: #e21224; font-size: 30px; line-height: 20px; font-weight: 700;">3.0 SR</p>
       </div>
     </div>
+  </div>
 
-    <div class="card" style="width: 22rem;">
-      <img src="assets/bev2.webp" class="card-img-top" alt="...">
+  <div class="col-12 col-md-6"> <!-- full width on mobile, half on md+ -->
+    <div class="card h-100">
+      <img src="assets/bev2.webp" class="card-img-top" alt="Pepsi Can">
       <div class="card-body">
         <p class="card-text">Pepsi Can</p>
         <p class="card-text">Pepsi carbonated soft drink</p>
-        <p class="card-text">5.0 SR</p>
+        <p class="card-text" style="color: #e21224; font-size: 30px; line-height: 20px; font-weight: 700;">5.0 SR</p>
       </div>
     </div>
   </div>
 </div>
-</div>
-
 
 
  <div class="parent">
@@ -358,9 +470,7 @@
     <h2 style="text-align: center;">Visit Us Today</h2>
     <br><br>
     <div class="container">
-      <!-- First Row: Location + Phone -->
       <div class="row mb-3">
-        <!-- Location -->
         <div class="col-md-6">
           <div class="d-flex align-items-center gap-3 p-2 border rounded">
             <img src="assets/location.png" alt="Location" style="width:50px; height:50px;">
@@ -370,8 +480,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Phone -->
         <div class="col-md-6">
           <div class="d-flex align-items-center gap-3 p-2 border rounded">
             <img src="assets/phone.png" alt="Phone" style="width:50px; height:50px;">
@@ -382,8 +490,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Second Row: Hours -->
       <div class="row">
         <div class="col-md-6">
           <div class="d-flex align-items-center gap-3 p-2 border rounded">
@@ -393,33 +499,75 @@
               <p>Daily open</p>
             </div>
           </div>
+           
+
+
         </div>
+        <br><br>
+        <hr style="width: 80%; height: 3px; background-color: #2c2421; border: none; margin: 20px auto;">
+
+        <p style="font-size: 18px;line-height: 20px; font-weight: 400px;color: #7e6f67; text-align: center;">Ready to order?</p>
+
+
+        
+  <a href="https://wa.me/YOURNUMBER" target="_blank" class="bt">
+    <i class="fab fa-whatsapp"></i> 
+    Order Now on WhatsApp
+  </a>
+</div>
+
+
+
+    
+        </div>
+    </div>
+
+
+
+        
+
+
+
+
+
+
+              
+     
       </div>
   </div>
 
 
+      
 
 
     </div>
+      <br><br>
   </div>
+   <br><br><br><br><br>
+  <div>
+
+  </div>
+ <div style="margin-top: 50px;"></div>
+
+
+
  
-    <footer style="
-  background-color: #e0d8c7;
-  color: white;
-  text-align: center;
-  padding: 15px 0;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  height: 80px;
-">
+  <footer class="footer">
   © 2024 Wadi Shawaya Restaurant. All rights reserved.
+</div> <br><br>  
+<div>
+    <a href="index.html" style="color: #7e6f67; text-decoration: none; margin: 0 15px;">Home</a> |
+    <a href="aboutus.html" style="color: #7e6f67; text-decoration: none; margin: 0 15px;">About Us</a> |
+    <a href="contact.html" style="color: #7e6f67; text-decoration: none; margin: 0 15px;">Contact Us</a> |
+    <a href="privacy.html" style="color: #7e6f67; text-decoration: none; margin: 0 15px;">Privacy Policy</a> |
+    <a href="termsandconditions.html" style="color: #7e6f67; text-decoration: none; margin: 0 15px;">Terms & Conditions</a>
+  </div>
 </footer>
 
 
 <div>
     
-  <!-- WhatsApp Button -->
+ 
   <a href="https://wa.me/YOURNUMBER" target="_blank" class="whatsapp-btn">
     <i class="fab fa-whatsapp"></i>
     Order Now on WhatsApp
@@ -427,10 +575,8 @@
 
 </div>
 
-<div class="lastt">
 
-</div>
-</div>
+
 
 
 </body>

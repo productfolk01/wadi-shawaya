@@ -15,105 +15,187 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
   <style>
     body {
-      background-color: #fff;
-      font-family: Arial, sans-serif;
-      color: #333;
+      background-color: #fffaf5;
+      font-family: 'Arimo', sans-serif;
+      color: #444;
+    }
+
+    .hero-section {
+      background: url('assets/about-bg.jpg') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: rgb(230, 185, 185);
+      position: relative;
+    }
+
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background:  hsl(41, 34%, 82%);
+    }
+
+    .hero-section h1 {
+      position: relative;
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      letter-spacing: 1px;
+      animation: fadeInDown 1.2s ease;
+    }
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
 
     .content-wrapper {
       background-color: #f9f8f6;
-      border-radius: 10px;
-      padding: 40px 30px;
-      max-width: 900px;
-      margin: 100px auto;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      border-radius: 15px;
+      padding: 50px 40px;
+      max-width: 950px;
+      margin: -80px auto 60px auto;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      position: relative;
+      z-index: 1;
     }
 
     h2 {
+      font-family: 'Playfair Display', serif;
+      color: #c19b5b;
       text-align: center;
-      margin-bottom: 20px;
-      color: #333;
+      margin-bottom: 25px;
     }
 
     p {
-      line-height: 1.7;
+      line-height: 1.8;
       color: #7e6f67;
       text-align: justify;
+      font-size: 1.05rem;
+    }
+
+    hr {
+      width: 80%;
+      height: 2px;
+      border: none;
+      background-color: #e2d8c7;
+      margin: 20px auto 30px;
+    }
+
+    .highlight {
+      color: #b8860b;
+      font-weight: 600;
     }
 
     .footer {
-      background-color: #f9f8f6;
+      background-color: #f3efea;
       color: #7e6f67;
       text-align: center;
-      padding: 30px 10px;
+      padding: 35px 15px;
       margin-top: 60px;
+      font-size: 0.95rem;
     }
 
     .footer a {
       color: #7e6f67;
       text-decoration: none;
       margin: 0 10px;
+      transition: color 0.3s ease;
     }
 
     .footer a:hover {
+      color: #c19b5b;
       text-decoration: underline;
     }
 
     /* Responsive Styles */
     @media (max-width: 768px) {
-      .content-wrapper {
-        padding: 25px 20px;
-        margin: 60px 15px;
+      .hero-section {
+        height: 45vh;
       }
 
-      h2 {
-        font-size: 1.5rem;
+      .hero-section h1 {
+        font-size: 2rem;
+      }
+
+      .content-wrapper {
+        padding: 30px 20px;
+        margin: -60px 15px 40px;
       }
 
       p {
         font-size: 0.95rem;
       }
 
-      .footer {
-        font-size: 0.9rem;
-      }
-
       .footer a {
         display: block;
-        margin: 8px 0;
+        margin: 6px 0;
       }
     }
   </style>
 </head>
 
 <body>
+     <nav class="navbar navbar-expand-lg navbar-light" style="background-color:  hsl(41, 34%, 82%);">
+  <div class="container-fluid">
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <img src="assets/wadi-logo-eoBAxxjz.png"  style="width: 70px; padding-right: 12px ;">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">contact</a>
+        </li>
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <h1>Discover the Heart of <span class="highlight">Wadi Shawaya</span></h1>
+  </section>
+
+  <!-- About Content -->
   <div class="container">
     <div class="content-wrapper">
       <h2>About Us</h2>
-      <hr style="width: 80%; height: 2px; border: none; background-color: #ccc; margin: 20px auto;" />
+      <hr />
 
       <p>
-        Welcome to Wadi Shawaya, where authentic Arabian flavors meet warm hospitality. Located in the heart of Saudi
-        Arabia, Wadi Shawaya is more than just a restaurant — it’s a destination for those who appreciate traditional
-        taste, fresh ingredients, and unforgettable dining experiences.
+        Welcome to <span class="highlight">Wadi Shawaya</span>, where authentic Arabian flavors meet warm hospitality. Nestled in the heart of Saudi Arabia, we are more than just a restaurant — we’re a celebration of traditional taste, freshness, and unforgettable dining moments.
       </p>
       <p>
-        At Wadi Shawaya, we take pride in preparing every dish with care, using time-honored recipes that celebrate the
-        rich culinary heritage of the region. From our signature shawaya grills to our flavorful rice specialties and
-        freshly made sides, every bite is crafted to bring comfort and satisfaction.
+        Every dish we serve is a story — carefully crafted with time-honored recipes, premium ingredients, and a touch of passion. From our signature <span class="highlight">shawaya grills</span> to aromatic rice specialties and freshly made sides, we bring you an experience that feels like home.
       </p>
       <p>
-        Our mission is simple — to serve delicious, high-quality food in a welcoming atmosphere that feels like home.
-        Whether you’re dining in with family, ordering for takeaway, or enjoying our meals at your events, Wadi Shawaya
-        promises an experience full of flavor, freshness, and quality.
+        Our mission is simple: to serve delicious, high-quality food in a welcoming atmosphere. Whether you’re dining with loved ones, ordering for takeaway, or planning a special event, <span class="highlight">Wadi Shawaya</span> promises a flavorful journey that honors tradition and taste.
       </p>
     </div>
   </div>
 
+  <!-- Footer -->
   <footer class="footer">
-    <p style="text-align: center;">© 2024 Wadi Shawaya Restaurant. All rights reserved.</p>
+    <p style="text-align: center;" >© 2024 Wadi Shawaya Restaurant. All rights reserved.</p>
     <div>
       <a href="index.html">Home</a> |
       <a href="aboutus.html">About Us</a> |
